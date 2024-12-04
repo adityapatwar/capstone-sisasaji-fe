@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html, body {
+    height: 100%; 
+    margin: 0;    /* Hilangkan margin default */
+    display: flex;
+    flex-direction: column; /* Mengatur agar body menggunakan flexbox dalam arah kolom */
+}
+
+.header {
+    border: 1px solid rgba(255, 255, 255, 0.589);
+    position: relative;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #6A1E55;
+}
+
+.icon {
+    position: absolute;
+    right: 16px;
+    color: white;
+    font-size: 50px;
+    line-height: 57px;
+}
+
+.header-awal {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+    border-radius: 0;
+}
+
+.header-awal span {
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+    color: white;
+    border-radius: 188px;
+}
+
+.header-Akhir {
+    border: 2px solid rgba(255, 255, 255, 0.589);
+    border-radius: 0;
+}
+
+.header-akhir span {
+    font-size: 50px;
+    position: relative;
+    margin: 10px;
+    color: white;
+}
+
+.content {
+    border: 2px solid rgba(255, 255, 255, 0.589);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B1C32;
+}
+
+.map {
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-size: 50px;
+    line-height: 10px;
+}
+
+.location span {
+    font-size: 19px;
+    text-align: center;
+    margin: 200px;
+    color: rgba(255, 255, 255, 0.537);
+}
+
+.location p {
+    font-size: 19px;
+    text-align: center;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.584);
+}
+
+.content-item {
+    display: flex;
+}
+
+.jemput-rejeki {
+    padding: 15px;
+    background-color: #3B1C32;
+    margin: 15px;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.589);
+}
+
+.rejeki {
+    font-size: 40px;
+    text-align: center;
+}
+
+.berbagi-rejeki {
+    padding: 15px;
+    color: white;
+    background-color: #3B1C32;
+    margin: 15px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.589);
+}
+
+.berbagi {
+    font-size: 40px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #3B1C32;
+    position: relative;
+    padding: 10px 0; /* Menambah padding untuk memberi jarak */
+}
+
+.beranda, .inbox, .profil {
+    text-align: center;
+    font-size: 25px;
+    background-color: #3B1C32;
+    width: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer {
+    margin-top: auto; /* Membuat footer tetap di bawah */
+}
