@@ -1,0 +1,42 @@
+@use 'sass:color';
+
+// Variables
+$font-family: 'Arial, sans-serif';
+$color-white: #ffffff;
+$color-black: #000000;
+$color-light-gray: #f8f8f8;
+$color-text-gray: #666;
+$color-dark-gray: #333;
+$color-medium-gray: #555;
+$color-info: #4a90e2;
+
+// Global Styles
+body {
+  font-family: $font-family;
+  background-color: $color-light-gray;
+  color: $color-dark-gray;
+  margin: 0;
+  padding: 0;
+}
+
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  color: $color-dark-gray;
+  margin: 0;
+}
+
+p {
+  color: $color-medium-gray;
+  margin: 0;
+}
+
+a {
+  color: $color-info;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
