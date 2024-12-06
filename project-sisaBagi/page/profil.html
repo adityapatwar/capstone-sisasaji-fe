@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #88c0d0;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .header img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .about {
+            margin-bottom: 20px;
+        }
+
+        .about-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .about-item {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .activity {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .activity:last-child {
+            border-bottom: none;
+        }
+
+        .activity img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .activity-info {
+            font-size: 14px;
+        }
+
+        .activity-info a {
+            color: #88c0d0;
+            text-decoration: none;
+        }
+
+        .activity-info p {
+            font-size: 12px;
+            margin: 5px 0;
+            color: #999;
+        }
+        .footer {
+            position: fixed; /* Menempel di bawah layar */
+            bottom: 0; /* Menempatkan elemen di bagian bawah */
+            left: 0; /* Menempel ke sisi kiri */
+            width: 100%; /* Lebar footer mencakup seluruh layar */
+            background-color: #88c0d0; /* Warna background footer */
+            padding: 10px 0; /* Jarak vertikal antara isi dan tepi footer */
+            display: flex; /* Menggunakan flexbox untuk tata letak */
+            justify-content: space-between; /* Menyebarkan item ke kiri, tengah, dan kanan */
+            align-items: center; /* Memusatkan item secara vertikal */
+            color: white; /* Warna teks putih */
+            z-index: 1000; /* Menempatkan footer di atas elemen lain */
+        }
+        
+        .footer-left,
+        .footer-right {
+            display: flex; /* Flexbox untuk menata elemen dalam kiri dan kanan */
+            flex-direction: column; /* Menyusun item secara vertikal */
+            align-items: center; /* Memusatkan item dalam kolom */
+        }
+        
+        .footer-center {
+            display: flex; /* Flexbox untuk menata item di tengah */
+            flex-direction: column; /* Menyusun item secara vertikal */
+            align-items: center; /* Memusatkan item */
+        }
+        
+        .footer-item {
+            display: flex; /* Flexbox untuk ikon dan teks */
+            flex-direction: column; /* Menyusun ikon dan teks secara vertikal */
+            align-items: center; /* Memusatkan ikon dan teks */
+            margin: 5px; /* Jarak antar item */
+        }
+        
+        .footer-item p {
+            margin-top: 5px; /* Jarak antara teks dan ikon */
+            font-size: 14px; /* Ukuran font untuk teks */
+        }
+        
+        .footer-item ion-icon {
+            font-size: 24px; /* Ukuran ikon */
+        }
+        .footer a {
+            text-decoration: none; /* Menghilangkan garis bawah pada link */
+            color: inherit; /* Menggunakan warna teks yang sama dengan konten di dalamnya */
+        }
+        
+        .footer-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+            cursor: pointer; /* Menambahkan pointer saat hover */
+        }
+        
+        .footer-item p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        
+        .footer-item ion-icon {
+            font-size: 24px;
+        }    
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="icon.png" alt="icon">
+        <span>Profile</span>
+    </div>
+
+    <div class="container">
+        <div class="about">
+            <p class="about-title">About</p>
+            <p class="about-item"><strong>Joined:</strong> 26 Aug, 2021</p>
+            <p class="about-item"><strong>Sector:</strong> Online Education</p>
+            <p class="about-item">Experienced and creative professional with a passion great as a commitment to best excellence.</p>
+        </div>
+
+        <div class="activity">
+            <img src="user-avatar.png" alt="User">
+            <div class="activity-info">
+                <p>Chloe Morgan posted a new article <a href="#">User Experience</a></p>
+                <p>1 day ago • Nexus</p>
+            </div>
+        </div>
+
+        <div class="activity">
+            <img src="user-avatar.png" alt="User">
+            <div class="activity-info">
+                <p>Chloe Morgan posted a new article <a href="#">Design Principles</a></p>
+                <p>2 days ago • Nexus</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Kiri: Beranda -->
+        <div class="footer-left">
+            <a href="../page/dashbord.html" class="footer-item">
+                <ion-icon name="home-outline"></ion-icon>
+                <p>Beranda</p>
+            </a>
+        </div>
+    
+        <!-- Tengah: Indeks -->
+        <div class="footer-center">
+            <a href="../page/inbox.html" class="footer-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>Indeks</p>
+            </a>
+        </div>
+    
+        <!-- Kanan: Profil -->
+        <div class="footer-right">
+            <a href="../page/profil.html" class="footer-item">
+                <ion-icon name="person-outline"></ion-icon>
+                <p>Profil</p>
+            </a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
