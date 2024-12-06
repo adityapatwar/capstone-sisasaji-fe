@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berbagi Rezeki 2.1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #88c0d0;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .container {
+    width: 100%; /* Lebar container */
+    padding: 10px; /* Ruang di dalam container */
+    display: flex;
+    flex-direction: column; /* Menyusun item secara vertikal */
+    gap: 10px; /* Jarak antar item */
+}
+
+.item {
+    display: flex; /* Menggunakan flexbox untuk tata letak item */
+    align-items: center; /* Memusatkan konten secara vertikal */
+    padding: 10px; /* Ruang di sekitar item */
+    background-color: #f4f4f4; /* Warna latar belakang item */
+    border-radius: 8px; /* Membuat sudut membulat */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    cursor: pointer; /* Menambahkan pointer pada hover */
+}
+
+.item:hover {
+    background-color: #e0e0e0; /* Warna latar belakang saat hover */
+}
+
+.item ion-icon {
+    font-size: 36px; /* Membesarkan ikon */
+    color: #88c0d0; /* Warna ikon */
+    margin-right: 15px; /* Jarak antara ikon dan teks */
+}
+
+.item-info {
+    flex: 1; /* Membuat info fleksibel agar teks memiliki ruang */
+    display: flex;
+    flex-direction: column; /* Menyusun teks secara vertikal */
+    justify-content: center; /* Memusatkan teks secara vertikal */
+}
+
+.item-title {
+    font-size: 16px; /* Ukuran font judul */
+    font-weight: bold; /* Menebalkan font judul */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.item-desc {
+    font-size: 14px; /* Ukuran font deskripsi */
+    color: #666; /* Warna deskripsi */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.item-action {
+    font-size: 18px; /* Ukuran simbol panah */
+    color: #888; /* Warna simbol */
+    margin-left: 10px; /* Jarak antara teks dan simbol panah */
+}
+
+        .add-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #88c0d0;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .add-button:hover {
+            background-color: #76b0c0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="../page/dashbord.html"><ion-icon name="arrow-back-outline"></ion-icon>  </a>
+        <span>Postingan Donasi Anda</span>
+
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <ion-icon name="gift-outline"></ion-icon>
+            <div class="item-info">
+                <p class="item-title">Beras 2Kg</p>
+                <p class="item-desc">Bahan Pokok</p>
+            </div>
+            <a href="#" class="footer-item"></a>
+           <ion-icon name="arrow-forward-circle-sharp"></ion-icon>
+        </div>
+
+        <div class="item">
+            <ion-icon name="gift-outline"></ion-icon>
+            <div class="item-info">
+                <p class="item-title">Nasi Box</p>
+                <p class="item-desc">Makanan Siap Saji</p>
+            </div>
+            <a href="#" class="footer-item"></a>
+            <ion-icon name="arrow-forward-circle-sharp"></ion-icon>
+        </div>
+
+        <div class="item">
+            <ion-icon name="gift-outline"></ion-icon>
+            <div class="item-info">
+                <p class="item-title">Pakaian Bekas SD</p>
+                <p class="item-desc">Barang</p>
+            </div>
+            <a href="#" class="footer-item"></a>
+            <ion-icon name="arrow-forward-circle-sharp"></ion-icon>
+        </div>
+    </div>
+
+    <a href="./tambah-berbagi.html" class="add-button">+</a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
