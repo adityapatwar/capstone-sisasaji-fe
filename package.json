@@ -1,0 +1,33 @@
+{
+  "name": "capstone-sisasaji-fe",
+  "version": "1.0.0",
+  "description": "![login](https://github.com/user-attachments/assets/2e2a57a5-d484-488b-9082-947377acbe49) ini adalah tampilan login nya",
+  "main": "jest.config.js",
+  "scripts": {
+    "start-dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "format": "prettier --write \"src/**/*.{js,css,html,json}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "gsap": "^3.12.5",
+    "sweetalert2": "^11.14.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "prettier": "^3.4.2",
+    "sass": "^1.82.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
